@@ -1,0 +1,18 @@
+server:
+  port: 8769
+  
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://192.168.1.110:8761/eureka/ # 生产环境（决不要是localhost，否则在Eureka管理页面看不到本服务已注册上来）
+      
+spring:
+  application.name: hystrix-terbine-server
+  
+security.basic.enabled: false
+
+turbine:
+  aggregator:
+    clusterConfig: default   
+  appConfig: eshop-one-service  # 监控的是名称为eshop-one-service的微服务
+  clusterNameExpression: new String("default")
