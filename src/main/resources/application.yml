@@ -7,7 +7,7 @@ eureka:
       defaultZone: http://192.168.1.110:8761/eureka/ # 生产环境（决不要是localhost，否则在Eureka管理页面看不到本服务已注册上来）
       
 spring:
-  application.name: hystrix-terbine-server
+  application.name: hystrix-turbine-server
   
 security.basic.enabled: false
 
